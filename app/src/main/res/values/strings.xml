@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LocationApp</string>
+    <string name="send_request">Send Request</string>
+    <string name="loading">Loading…</string>
+</resources>
