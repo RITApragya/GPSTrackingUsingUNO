@@ -21,7 +21,7 @@ class ApiConfig {
 
             // Retrofit
             val retrofit = Retrofit.Builder()
-                .baseUrl("https://api.thingspeak.com/channels/2521665/")
+                .baseUrl("https://api.thingspeak.com/channels/2536553/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()
@@ -29,6 +29,6 @@ class ApiConfig {
             return retrofit.create(ApiService::class.java)
         }
 
-        const val API_KEY = "3FGVQBJJS9EVU2PQ"
+        const val API_KEY = "M6WM5NWRF4VU0SFM"
     }
 }

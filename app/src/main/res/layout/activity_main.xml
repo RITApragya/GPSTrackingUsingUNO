@@ -32,16 +32,6 @@
         app:layout_constraintTop_toBottomOf="@+id/LatitudeN" />
 
     <TextView
-        android:id="@+id/AltitudeM"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Altitude:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="@+id/LatitudeN"
-        app:layout_constraintTop_toBottomOf="@+id/LongitudeE" />
-
-    <TextView
         android:id="@+id/TimeHMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,7 +39,7 @@
         android:text="Time:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="@+id/LatitudeN"
-        app:layout_constraintTop_toBottomOf="@+id/AltitudeM" />
+        app:layout_constraintTop_toBottomOf="@+id/LongitudeE" />
 
     <TextView
         android:id="@+id/latitudeVal"
@@ -70,16 +60,6 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toEndOf="@+id/LongitudeE"
         app:layout_constraintTop_toTopOf="@+id/LongitudeE" />
-
-    <TextView
-        android:id="@+id/altVal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/AltitudeM"
-        app:layout_constraintTop_toTopOf="@+id/AltitudeM" />
 
     <TextView
         android:id="@+id/timeVal"
@@ -112,17 +92,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/longitudeVal"
         app:layout_constraintStart_toEndOf="@+id/longitudeVal" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:text="m"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/altVal"
-        app:layout_constraintStart_toEndOf="@+id/altVal" />
 
     <Button
         android:id="@+id/buttonreq"

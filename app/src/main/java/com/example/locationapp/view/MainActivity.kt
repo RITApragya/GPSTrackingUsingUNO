@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var tvlat: TextView
     private lateinit var tvlong: TextView
-    private lateinit var tvele: TextView
+//    private lateinit var tvele: TextView
     private lateinit var tvtime: TextView
     private lateinit var butreq: Button
 //    val url = "https://api.thingspeak.com/channels/2521665/feeds/last.json"
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 //        btnSend = findViewById(R.id.btn_send_request)
         tvlat = findViewById(R.id.latitudeVal)
         tvlong = findViewById(R.id.longitudeVal)
-        tvele = findViewById(R.id.altVal)
+//        tvele = findViewById(R.id.altVal)
         tvtime = findViewById(R.id.timeVal)
         butreq = findViewById(R.id.buttonreq)
 
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             if (isLoading) {
                 tvlat.text = resources.getString(R.string.loading)
                 tvlong.text = resources.getString(R.string.loading)
-                tvele.text = resources.getString(R.string.loading)
+//                tvele.text = resources.getString(R.string.loading)
                 tvtime.text = resources.getString(R.string.loading)
             }
         }
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                 tvlat.text = mainViewModel.errorMessage
                 tvlong.text = mainViewModel.errorMessage
                 tvtime.text = mainViewModel.errorMessage
-                tvele.text = mainViewModel.errorMessage
+//                tvele.text = mainViewModel.errorMessage
             }
         }
 
@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
     private fun setResultText(locationData: CurrentLocationResponse) {
         val latText = StringBuilder("\n")
         val longText = StringBuilder("\n")
-        val eleText = StringBuilder("\n")
+//        val eleText = StringBuilder("\n")
         val timeText = StringBuilder("\n")
 
         //get time
@@ -99,14 +99,14 @@ class MainActivity : AppCompatActivity() {
         locationData.let {
             latText.append("${it.latitude}\n")
             longText.append("${it.longitude}\n")
-            eleText.append("${it.altitude}\n")
+//            eleText.append("${it.altitude}\n")
             timeText.append("${hour}:${minute}:${second} IST\n")
 //            resultText.append("Local Time: ${location?.localtime}\n")
         }
 
         tvlat.text = latText
         tvlong.text = longText
-        tvele.text = eleText
+//        tvele.text = eleText
         tvtime.text = timeText
     }
 
